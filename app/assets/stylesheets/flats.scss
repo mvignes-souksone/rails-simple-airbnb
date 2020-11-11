@@ -1,0 +1,95 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+
+.banner h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  margin: 20px;
+}
+
+.main h1 {
+  font-size: 25px
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card-image img {
+  width: 100%;
+}
+
+.card {
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.card-content {
+  background-color: #F8F9FA;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.card-content h3 {
+  font-size: 15px;
+}
+
+.card-content p {
+  font-size: 10px;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+.card-actions {
+  font-size: 13px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-actions a {
+  text-decoration: none;
+}
+
+.card-actions a:hover {
+  text-decoration: none;
+}
+
+.edit a{
+  color: orange;
+}
+
+.remove a{
+  color: red;
+}

@@ -1,0 +1,40 @@
+<div class="banner">
+  <h1>Simple Airbnb</h1>
+  <div class="btn btn-primary btn-add"><%= link_to "Add", new_flat_path %></div>
+</div>
+
+<div class="container">
+
+  <div class="main">
+      <h1 class="main-title">All our Flats</h1>
+      <p class="main-subtitle">All <%= @count_flat %> flats</p>
+  </div>
+
+    <div class="container cards-container">
+      <div class="row">
+        <% @flats.each do |flat| %>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-image"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200" alt="image"></div>
+              <div class="card-content">
+                <h3><%= flat.name %></h3>
+                <p><%= flat.address %></p>
+                <div class="card-flex">
+                  <div class="price"><%= flat.price_per_night %> € per night</div>
+                  <div class="number-person"><%= flat.number_of_guests %>pers</div>
+                </div>
+              </div>
+              <div class="card-actions">
+                <div class="infos"><%= link_to "More infos", flat_path(flat) %></div>
+                <div class="edit"><%= link_to "Edit", edit_flat_path(flat) %></div>
+                <div class="remove"><%= link_to "Remove", flat_path(flat), method: :delete, data: { confirm: "Are you sure?" } %></div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+</div>
+
+
